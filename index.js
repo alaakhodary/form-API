@@ -36,4 +36,11 @@ myForm.addEventListener("submit", async function (e) {
   });
   const result = await response.json();
   console.log(result);
+    
+      const markup = `<div class="box">
+                        <h1 class="heading">${result.name}</h1>
+                        <p class="paragraph">${result.email}</P>
+                      </div>`;
+      document.querySelector(".box").insertAdjacentHTML("afterend", markup);
+    
 });
