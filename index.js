@@ -3,6 +3,13 @@ let form = document.querySelector(".form-all");
 const myForm = document.querySelector(".All-1");
 const todoName = document.querySelector(".input-1");
 const todoEmail = document.querySelector(".input-2");
+const todoList = document.querySelector(".list");
+const cancel = document.querySelector(".cancel");
+
+cancel.addEventListener("click", function (e) {
+  e.preventDefault();
+  form.style.display = "none";
+});
 
 displayForm.addEventListener("click", function () {
   form.style.display = "block";
@@ -42,12 +49,13 @@ myForm.addEventListener("submit", async function (e) {
 function handelTodo(todo) {
   let h1 = document.createElement("h1");
   let p = document.createElement("p");
-  let box = document.querySelector(".box");
-  box.classList.value = "box";
+  let li = document.createElement("li");
+  li.classList.value = "list-item";
   h1.classList.value = "heading";
   p.classList.value = "paragraph";
   h1.textContent = `${todo.name}`;
   p.textContent = `${todo.email}`;
-  box.appendChild(h1);
-  box.appendChild(p);
+  li.appendChild(h1);
+  li.appendChild(p);
+  todoList.append(li);
 }
