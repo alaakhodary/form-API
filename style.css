@@ -18,35 +18,39 @@ h1.title {
   font-weight: 900;
   line-height: 87px;
 }
-.hidden {
-  display: none;
+ul {
+  list-style: none;
 }
-.box {
-  padding: 26px 34px;
+.list {
   width: 445px;
-  /* height: 171px; */
-  background: #ffffff;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   margin: auto;
   margin-bottom: 1rem;
 }
+.list li {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 26px 34px 26px 34px;
+  margin-bottom: 34px;
+  overflow: hidden;
+  width: 445px;
+  height: 171px;
+}
 .heading {
-  height: 29px;
-  font-weight: 800;
   font-size: 24px;
+  font-weight: 800;
   line-height: 29px;
+  letter-spacing: 0em;
   color: #374151;
 }
 .paragraph {
-  width: 377px;
-  height: 41px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 19px;
-  margin-top: 0.5rem;
+  letter-spacing: 0em;
+  margin-top: 12px;
+  color: #6b7280;
 }
 .add-icon {
   display: flex;
